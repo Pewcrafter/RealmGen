@@ -1,0 +1,52 @@
+		/* Styling of the entire external grid */
+		.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		background-color: #F1F1F1;
+		border: 2px solid rgba(0, 0, 0, 1);
+		padding: 0px;
+		}
+		
+		/* Style for individual squares within grid */
+		.grid-item {
+		background-color: rgba(187, 135, 23, .8);
+		border: 2px solid rgba(0, 0, 0, 1);
+		padding: 20px;
+		font-size: 30px;
+		text-align: left;
+		}
+
+		/* Max width for potion calculation UI */
+		.pageWrapper {
+			max-width: 980px;
+		}
+		
+		/* Style for individual text box */
+		input[type=number] {
+			width: 100px;
+			height: 60px;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 4px inset rgba(0, 0, 256, .8);
+			border-radius: 4px;
+			vertical-align: 110%;
+			font-size: 25px;
+			font-family: impact;
+			background-color: rgba(187, 135, 23, .2);
+			color: white;
+			-moz-appearance: textfield;
+		}
+		/* Removes arrows from input */
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+		}
+		
+		/* Style for total price calculator */
+		.totalPrice {
+		color: rgba(0, 220, 51, .8);
+		font-size: 50px;
+		font-family: monaco;
+		}

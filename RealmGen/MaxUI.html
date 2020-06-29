@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Custom Max Potion Packs</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+		body {
+			background-image: url('https://vignette3.wikia.nocookie.net/realmofthemadgod/images/5/50/Wiki-background/revision/latest?cb=20121010161901');
+		} 
+		</style>
+	</head>
+	<body>
+		<center><div class="pageWrapper">
+		<h1 style="text-align:center; color:white;">Instant Maxing 
+			<button class="btn btn-primary" type="button" id="realmEye" style="padding: 3px 4px; vertical-align: 10%;">
+				<span style="font-size:16px; font-family: serif; color: rgba(51,51,51,.8);"><strong>Realm</strong></span>
+				<span style="font-size:16px; font-family: serif; color: rgba(0,136,204,1);"><strong>Eye</strong></span>
+			</button>
+			<button type="button" style="font-size: 16px; font-family: impact; padding: 3px 14px; vertical-align: 0%; background-color: rgba(170,170,170,1);" id="manual">Manual
+		</h1>
+		<p style="text-align:center; color:white; font-size: 20px;">Enter the pots you need to max your character!</p>
+			<!-- Grid class for manual mode -->
+			<div class="grid-container" id="mainGrid">
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Life.png" alt="Life_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="lifeQuantity" name="lq" placeholder="0" min="0" max="100"></div>
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Mana.png" alt="Mana_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="manaQuantity" name="mq" placeholder="0" min="0" max="100"></div>
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Attack.png" alt="Atk_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="atkQuantity" name="aq" placeholder="0" min="0" max="100"></div>  
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Defense.png" alt="Def_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="defQuantity" name="dq" placeholder="0" min="0" max="100"></div>
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Speed.png" alt="Speed_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="speedQuantity" name="sq" placeholder="0" min="0" max="100"></div>
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Dexterity.png" alt="Dex_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="dexQuantity" name="deq" placeholder="0" min="0" max="100"></div>  
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Vitality.png" alt="Vit_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="vitQuantity" name="vq" placeholder="0" min="0" max="100"></div>
+				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Wisdom.png" alt="Wis_Pot_Image" style="width:85px;height:85px;"> 
+					<input type="number" id="wisQuantity" name="wq" placeholder="0" min="0" max="100"></div>
+			</div>
+			<!-- Realmeye mode displays -->
+			<div class="grid-container" id="reGrid" style="display: none;">
+				<p><b>Realmeye Lookup</b></p>
+				<input id="charName" type="text" placeholder="Enter character name!">
+				<button type="button" id="submit">Submit</button>
+			</div>
+		<div class="totalPrice">Total Price: $45.62</div> <!--TODO: make this a text area so i can edit it when potions are added! -->
+		</div></center>
+		<script src="js/maxUIFuncs.js" async defer></script>
+	</body>
+</html>

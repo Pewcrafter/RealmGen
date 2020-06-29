@@ -1,0 +1,1 @@
+https://nightfirec.at/realmeye-api/?player=[playername]&filter=characters+stats+class+hp+mp+defense+attack+dexterity+speed+vitality+wisdom&pretty
