@@ -50,3 +50,8 @@
 		font-size: 50px;
 		font-family: monaco;
 		}
+
+		/* Style for realmeye character list */
+		nav ul{height:200px; width:18%;}
+		nav ul{overflow:hidden; overflow-y:scroll;}
+		

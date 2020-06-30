@@ -20,9 +20,9 @@
 			</button>
 			<button type="button" style="font-size: 16px; font-family: impact; padding: 3px 14px; vertical-align: 0%; background-color: rgba(170,170,170,1);" id="manual">Manual
 		</h1>
-		<p style="text-align:center; color:white; font-size: 20px;">Enter the pots you need to max your character!</p>
+		<p style="text-align:center; color:white; font-size: 20px;" id="header">RealmEye Lookup</p>
 			<!-- Grid class for manual mode -->
-			<div class="grid-container" id="mainGrid">
+			<div class="grid-container" id="mainGrid" style="display: none;">
 				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Life.png" alt="Life_Pot_Image" style="width:85px;height:85px;"> 
 					<input type="number" id="lifeQuantity" name="lq" placeholder="0" min="0" max="100"></div>
 				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Mana.png" alt="Mana_Pot_Image" style="width:85px;height:85px;"> 
@@ -40,13 +40,31 @@
 				<div class="grid-item"><img src="https://static.drips.pw/rotmg/wiki/Consumable/Stat%20Potions/Potion%20of%20Wisdom.png" alt="Wis_Pot_Image" style="width:85px;height:85px;"> 
 					<input type="number" id="wisQuantity" name="wq" placeholder="0" min="0" max="100"></div>
 			</div>
+			<button type="button" id="manSubmit" style="padding: 8px 8px; margin: 10px 0px; width: 130px; height: 50px; font-size: 25px;display:none;">Purchase</button>
 			<!-- Realmeye mode displays -->
-			<div class="grid-container" id="reGrid" style="display: none;">
-				<p><b>Realmeye Lookup</b></p>
-				<input id="charName" type="text" placeholder="Enter character name!">
-				<button type="button" id="submit">Submit</button>
+			<div id="reGrid" style="display: grid;">
+				<input id="charName" type="text" style="display:inline-block;width:20%;height:20px;" placeholder="Enter character name!">
+				<button type="button" id="submit" style="display:inline-block;width: 8%; margin: 10px 0px">Look Up</button>
 			</div>
-		<div class="totalPrice">Total Price: $45.62</div> <!--TODO: make this a text area so i can edit it when potions are added! -->
+				<ul id="charList" style="display: none;">
+					<li id="char1" style="color: white; display: none;">char1</li>
+					<li id="char2" style="color: white; display: none;">char2</li>
+					<li id="char3" style="color: white; display: none;">char3</li>
+					<li id="char4" style="color: white; display: none;">char4</li>
+					<li id="char5" style="color: white; display: none;">char5</li>
+					<li id="char6" style="color: white; display: none;">char6</li>
+					<li id="char7" style="color: white; display: none;">char7</li>
+					<li id="char8" style="color: white; display: none;">char8</li>
+					<li id="char9" style="color: white; display: none;">char9</li>
+					<li id="char10" style="color: white; display: none;">char10</li>
+					<li id="char11" style="color: white; display: none;">char11</li>
+					<li id="char12" style="color: white; display: none;">char12</li>
+					<li id="char13" style="color: white; display: none;">char13</li>
+					<li id="char14" style="color: white; display: none;">char14</li>
+					<li id="char15" style="color: white; display: none;">char15</li>
+					<li id="char16" style="color: white; display: none;">char16</li>
+				</ul>
+		<div class="totalPrice" id="tPrice">Total Price: $0.00</div> <!--TODO: make this a text area so i can edit it when potions are added! -->
 		</div></center>
 		<script src="js/maxUIFuncs.js" async defer></script>
 	</body>
